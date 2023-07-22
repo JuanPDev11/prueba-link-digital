@@ -197,3 +197,21 @@
 @media screen and (max-width: 992px) {
   .c5 {
     grid-column: 1/2; } }
+
+/*FOOTER*/
+.footer {
+  display: flex;
+  background: #000;
+  justify-content: space-around;
+  align-items: center;
+  height: 155px;
+  margin-top: 50PX; }
+  .footer__logo {
+    width: 150px;
+    position: absolute;
+    top: -137px; }
+  .footer__logo-container {
+    position: relative; }
+  .footer__text {
+    color: #fff;
+    font-size: 18px; }

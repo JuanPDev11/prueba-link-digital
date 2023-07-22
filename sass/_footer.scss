@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    background: #000;
+    justify-content: space-around;
+    align-items: center;
+    height: 155px;
+    margin-top: 50PX;
+
+    &__logo{
+        width: 150px;
+        position: absolute;
+        top: -137px;
+    }
+
+    &__logo-container{
+        position: relative;
+    }
+
+    &__text{
+        color: #fff;
+        font-size: 18px;
+    }
+}
