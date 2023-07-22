@@ -1,0 +1,72 @@
+.columns{
+    margin: 0 250px;
+    @include responsive(1120px){
+        margin: 0 150px;
+    }
+
+    &__firts-title{
+        font-size: 28px;
+        color: red;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    &__banner-container{
+        background: grey;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__banner{
+        font-size: 18px;
+    }
+
+    &__form{
+        background: darkgrey;
+        text-align: end;
+
+
+        &-title{
+            font-size: 18px;
+            text-align: start;
+        }
+        &-input{
+            border: 1px solid #000;
+            margin: 5px 0;
+            padding: 5px 0;
+            width: 99%;
+        }
+        
+    }
+
+    &__system{
+        position: relative;
+    }
+    &__menu{
+        position: relative;
+    }
+
+    &__items{
+        background-color: grey;
+        position: fixed;
+        top: 80%;
+        opacity: 0;
+        padding: 20px;
+        border-radius: 20px;
+        @include responsive(1200px){
+            left: 5px;
+        }
+    }
+
+    &__star{
+        &::before{
+            content: url(../img/star.gif);
+        }
+    }
+}
+
+.menu-op{
+    opacity: 1;
+}
