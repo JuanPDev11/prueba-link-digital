@@ -1,0 +1,67 @@
+/*MIXINS*/
+/*NAV*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  height: 130px;
+  width: 80%;
+  margin: auto; }
+  .navbar__container {
+    background: #000; }
+  .navbar__logo {
+    width: 100px; }
+  .navbar__items {
+    display: flex;
+    list-style: none;
+    gap: 30px; }
+    @media screen and (max-width: 769px) {
+      .navbar__items {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        gap: 70px;
+        transition: all 1s; } }
+  .navbar__item {
+    border-right: 1px solid #fff;
+    width: 80px; }
+    @media screen and (max-width: 769px) {
+      .navbar__item {
+        border: none;
+        width: auto; } }
+  .navbar__link {
+    text-decoration: none;
+    color: #fff; }
+  .navbar__menu-open {
+    display: none;
+    width: 40px;
+    cursor: pointer; }
+    @media screen and (max-width: 769px) {
+      .navbar__menu-open {
+        display: block; } }
+  .navbar__menu-close {
+    display: none;
+    width: 40px;
+    cursor: pointer; }
+    @media screen and (max-width: 769px) {
+      .navbar__menu-close {
+        display: block; } }
+
+.visible {
+  opacity: 1;
+  visibility: visible; }
