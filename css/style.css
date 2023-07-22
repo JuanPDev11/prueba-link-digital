@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto'; }
 
 .navbar {
   display: flex;
@@ -65,3 +66,35 @@
 .visible {
   opacity: 1;
   visibility: visible; }
+
+/*GRID 1*/
+.grid__title {
+  text-align: center;
+  font-size: 28px;
+  margin: 50px 0 70px;
+  color: red; }
+
+.grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 200px;
+  gap: 15px; }
+  @media screen and (max-width: 800px) {
+    .grid__container {
+      grid-template-columns: 1fr 1fr;
+      margin: auto; } }
+  @media screen and (max-width: 500px) {
+    .grid__container {
+      grid-template-columns: 1fr;
+      margin: auto; } }
+
+.grid__img-container {
+  margin: auto; }
+
+.grid__img {
+  border-radius: 100px; }
+
+.template-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 28px; }

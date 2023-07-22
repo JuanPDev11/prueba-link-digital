@@ -1,0 +1,40 @@
+.grid{
+
+    &__title{
+        text-align: center;
+        font-size: 28px;
+        margin: 50px 0 70px;
+        color: red;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 200px;
+        gap: 15px;
+
+        @include responsive(800px){
+            grid-template-columns: 1fr 1fr;
+            margin: auto;
+        }
+        @include responsive(500px){
+            grid-template-columns: 1fr;
+            margin: auto;
+        }
+        
+    }
+
+    &__img-container{
+        margin: auto;
+    }
+
+    &__img{
+        border-radius: 100px;
+    }
+}
+
+.template-title{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+}
