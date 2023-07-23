@@ -181,6 +181,9 @@
 
 .cuadricula__container {
   margin: 0 240px; }
+  @media screen and (max-width: 800px) {
+    .cuadricula__container {
+      margin: 0 100px; } }
 
 .c1 {
   grid-column: 1/4; }
