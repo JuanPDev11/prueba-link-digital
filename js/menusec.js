@@ -6,7 +6,7 @@ window.addEventListener('scroll', ()=>{menuOpacity()});
 function menuOpacity(){
     let position = document.documentElement.scrollTop;
     let size = window.screen.width
-    console.log(position);
+    //console.log(position);
 
     //Mostrando y ocultando el menu secundario en tamaño estandar desktop
 
