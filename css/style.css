@@ -211,7 +211,8 @@
       .columns__items {
         position: relative;
         top: 0;
-        background-color: antiquewhite; } }
+        background-color: antiquewhite;
+        opacity: 1; } }
   .columns__star::before {
     content: url(../img/star.gif); }
 
