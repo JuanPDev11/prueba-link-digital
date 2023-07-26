@@ -1,6 +1,6 @@
 const nav = document.querySelector("#items");
 const open = document.querySelector("#btn-open");
-const close = document.querySelector("#btn-close");
+const close1 = document.querySelector("#btn-close");
 
 //Agregando clase a elementos del nav para hacerlos visibles al dar click al menu hamburguesa
 open.addEventListener("click",()=>{
@@ -8,6 +8,6 @@ open.addEventListener("click",()=>{
 })
 
 //Eliminado clase a elementos del nav para cerrar menu abierto en el evento anterior
-close.addEventListener("click",()=>{
+close1.addEventListener("click",()=>{
     nav.classList.remove("visible");
 })
