@@ -3,6 +3,9 @@
     @include responsive(1120px){
         margin: 0 150px;
     }
+    @include responsive(769px){
+        margin: 0 50px;
+    }
 
     &__firts-title{
         font-size: 28px;
@@ -57,6 +60,11 @@
         border-radius: 20px;
         @include responsive(1200px){
             left: 5px;
+        }
+        @include responsive(769px){
+            position: relative;
+            top: 0;
+            background-color: antiquewhite;
         }
     }
 
